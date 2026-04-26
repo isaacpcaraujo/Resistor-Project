@@ -1,0 +1,33 @@
+{
+    "experiment_name": "ringer_v2_training",
+    "version": 2,
+    "data": {
+        "iet": 0,
+        "ieta": 0,
+        "rings": 25,
+        "path": "/data/dataset.h5"
+    },
+    "training": {
+        "batch_size": 2048,
+        "epochs": 100,
+        "learning_rate": 0.001,
+        "k_folds": 10,
+        "repeats": 10
+    },
+    "model": {
+        "architecture": "cnn_1d",
+        "filters": [
+            16,
+            32
+        ],
+        "kernel_size": 3,
+        "dropout": 0.2
+    },
+    "hpc": {
+        "queue": "gpu",
+        "nodes": 1,
+        "gpus_per_node": 1,
+        "time": "24:00:00",
+        "memory": "64G"
+    }
+}
