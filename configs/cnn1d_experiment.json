@@ -11,7 +11,7 @@
     "feature_selection": false
   },
   "model": {
-    "type": "xgboost",
+    "type": "cnn-1d",
     "hyperparameters": {
       "max_depth": 6,
       "learning_rate": 0.1,
